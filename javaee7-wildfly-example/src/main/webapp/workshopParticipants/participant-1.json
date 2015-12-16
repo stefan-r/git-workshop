@@ -1,0 +1,11 @@
+{
+  "name": "Marc Fischer",
+  "role": "Entwickler",
+  "questions": [
+    {
+      "question": "Wann verwenden wir Git?",
+      "answered": false
+    },
+    { "question": "Wie steuern wir die Berechtigungen in Git?", "answered":false}
+  ]
+}
