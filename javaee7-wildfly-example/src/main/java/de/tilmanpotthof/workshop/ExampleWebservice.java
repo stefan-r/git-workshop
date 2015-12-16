@@ -21,10 +21,17 @@ public class ExampleWebservice {
   public Response example() throws JsonMappingException {
     List<WorkshopParticipant> workshopParticipants = new ArrayList<>();
 
+	workshopParticipants.add(new WorkshopParticipant("Dietmar Hermann", "Nasenbär")
+            .addAnsweredQuestion("Wenn Palmöl aus Palmen gemacht wird, woraus wird dann Babyöl gemacht?"));
+	
     workshopParticipants.add(new WorkshopParticipant("Tilman Potthof", "Workshop-Leiter")
             .addAnsweredQuestion("Wo ist der Workshop?")
             .addOpenQuestion("Wo ist die Kaffee-Maschine?"));
 
+	workshopParticipants.add(new WorkshopParticipant("Dietmar Hermann", "Nasenbär")
+            .addAnsweredQuestion("Warum lief das Huhn über die Straße?")
+            .addOpenQuestion("Wer ist Chuck Norris?"));
+			
     return Response.ok(workshopParticipants).build();
   }
 
