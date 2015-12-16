@@ -35,7 +35,11 @@ public class ExampleWebservice {
 	workshopParticipants.add(new WorkshopParticipant("Robert Rembold", "LE Embedded Systems")
             .addAnsweredQuestion("Wo liegen die Workshop-Unterlagen?")
             .addOpenQuestion("Was hat es mit der 42 auf sich?"));
-			
+    
+    workshopParticipants.add(new WorkshopParticipant("Benjamin Wolf", "Softwarearchitekt")
+            .addAnsweredQuestion("Wo ist die Toilette?")
+            .addOpenQuestion("Wo gibt es Cappuccino?");
+
     return Response.ok(workshopParticipants).build();
   }
 
