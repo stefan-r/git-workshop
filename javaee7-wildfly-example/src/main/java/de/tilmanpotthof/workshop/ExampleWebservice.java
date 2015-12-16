@@ -32,6 +32,10 @@ public class ExampleWebservice {
             .addAnsweredQuestion("Warum lief das Huhn über die Straße?")
             .addOpenQuestion("Wer ist Chuck Norris?"));
 			
+	workshopParticipants.add(new WorkshopParticipant("Robert Rembold", "LE Embedded Systems")
+            .addAnsweredQuestion("Wo liegen die Workshop-Unterlagen?")
+            .addOpenQuestion("Was hat es mit der 42 auf sich?"));
+			
     return Response.ok(workshopParticipants).build();
   }
 
